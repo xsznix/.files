@@ -1,0 +1,8 @@
+*
+
+!.gitignore
+!.vimrc
+!.zshrc
+!.oh-my-zsh/*
+!.slate
+!Library/Application\ Support/Karabiner/private.xml

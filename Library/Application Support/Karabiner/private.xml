@@ -1,0 +1,348 @@
+<?xml version="1.0"?>
+<root>
+
+  <devicevendordef>
+    <vendorname>UtechSmart</vendorname>
+    <vendorid>0x04d9</vendorid>
+  </devicevendordef>
+
+  <deviceproductdef>
+    <productname>Venus</productname>
+    <productid>0xfa58</productid>
+  </deviceproductref>
+
+  <!-- emoticons -->
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SMILEY_HAPPY</name>
+    <url type="shell">
+      <![CDATA[    echo "tell application \"System Events\" to keystroke \":)\"" | osascript    ]]>
+    </url>
+  </vkopenurldef>
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SMILEY_SAD</name>
+    <url type="shell">
+      <![CDATA[    echo "tell application \"System Events\" to keystroke \":(\"" | osascript    ]]>
+    </url>
+  </vkopenurldef>
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SMILEY_FROWN</name>
+    <url type="shell">
+      <![CDATA[    echo "tell application \"System Events\" to keystroke \":/\"" | osascript    ]]>
+    </url>
+  </vkopenurldef>
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SMILEY_EXCITE</name>
+    <url type="shell">
+      <![CDATA[    echo "tell application \"System Events\" to keystroke \":D\"" | osascript    ]]>
+    </url>
+  </vkopenurldef>
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SMILEY_AFRAID</name>
+    <url type="shell">
+      <![CDATA[    echo "tell application \"System Events\" to keystroke \"D:\"" | osascript    ]]>
+    </url>
+  </vkopenurldef>
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SMILEY_LOVE</name>
+    <url type="shell">
+      <![CDATA[    echo "tell application \"System Events\" to keystroke \"<3\"" | osascript    ]]>
+    </url>
+  </vkopenurldef>
+
+  <item>
+    <name>Send Shift-Ctrl-F13 for Right Option</name>
+    <identifier>private.send_shift_ctrl_f13_for_ropt</identifier>
+    <autogen>--KeyToKey-- KeyCode::OPTION_R,
+                          KeyCode::F13, ModifierFlag::SHIFT_L
+                                      | ModifierFlag::CONTROL_L
+    </autogen>
+  </item>
+
+  <item>
+    <name>Remap buttons on Venus</name>
+    <identifier>private.venus-buttons</identifier>
+    <block>
+      <device_only>
+        DeviceVendor::UtechSmart,
+        DeviceProduct::Venus
+      </device_only>
+      <autogen>--KeyToKey-- KeyCode::KEY_1, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_2, KeyCode::CURSOR_DOWN, ModifierFlag::CONTROL_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_3, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_4, KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L | ModifierFlag::CONTROL_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_5, KeyCode::CURSOR_UP, ModifierFlag::CONTROL_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_6, KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L | ModifierFlag::CONTROL_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_7, KeyCode::TAB, ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_8, KeyCode::W, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_9, KeyCode::TAB, ModifierFlag::CONTROL_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_0, KeyCode::COMMA, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEYPAD_PLUS, KeyCode::F11, ModifierFlag::OPTION_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEYPAD_MINUS, KeyCode::F12, ModifierFlag::OPTION_L</autogen>
+    </block>
+  </item>
+
+  <item>
+    <name>fn shortcuts for Slate tiling</name>
+    <identifier>private.slate-fn-tiling</identifier>
+    <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F1, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F2, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F3, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F4, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F5, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F6, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F7, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F8, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F9, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F10, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F11, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F12, ModifierFlag::COMMAND_L</autogen>
+
+    <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F1, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F2, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F3, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F4, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F5, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F6, ModifierFlag::CONTROL_L</autogen>
+
+    <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::F1, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F1, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::F2, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F2, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::F3, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F3, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::F4, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F4, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::F5, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F5, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::F6, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F6, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::F7, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F7, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::F8, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F8, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::F9, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F9, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::F10, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F10, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::F11, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F11, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::F12, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F12, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L</autogen>
+
+    <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::F7, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F7, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::F8, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F8, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::F9, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F9, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::F10, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F10, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::F11, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F11, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::F12, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F12, ModifierFlag::CONTROL_L</autogen>
+  </item>
+
+  <item>
+    <name>F19 to Delete</name>
+    <identifier>private.f19-delete</identifier>
+    <autogen>--KeyToKey-- KeyCode::F19, KeyCode::DELETE</autogen>
+  </item>
+
+  <item>
+    <name>FQ to delete world</name>
+    <identifier>private.delete-word</identifier>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::Q, KeyCode::DELETE, ModifierFlag::OPTION_L</autogen>
+  </item>
+
+  <item>
+    <name>JP to forward delete</name>
+    <identifier>private.engelbart-forward-delete</identifier>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::P, KeyCode::FORWARD_DELETE</autogen>
+  </item>
+
+  <item>
+    <name>J' to capslock</name>
+    <identifier>private.engelbart-capslock</identifier>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::QUOTE, KeyCode::CAPSLOCK</autogen>
+  </item>
+
+  <item>
+    <name>Two key combos for navigation</name>
+    <identifier>private.engelbart-arrow</identifier>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::G, KeyCode::CURSOR_LEFT</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::H, KeyCode::J, KeyCode::CURSOR_RIGHT</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::D, KeyCode::G, KeyCode::CURSOR_UP</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::H, KeyCode::K, KeyCode::CURSOR_DOWN</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::F, KeyCode::HOME</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::SEMICOLON, KeyCode::END</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::C, KeyCode::V, KeyCode::PAGEUP</auttogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::COMMA, KeyCode::PAGEDOWN</autogen>
+  </item>
+
+  <item>
+    <name>Two key combos for ctrl+tabs and cmd+left/right</name>
+    <identifier>private.engelbart-tabs</identifier>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::E, KeyCode::R, KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::U, KeyCode::I, KeyCode::TAB, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::W, KeyCode::R, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::U, KeyCode::O, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>
+  </item>
+
+  <item>
+    <name>Two key combos for spaces</name>
+    <identifier>private.engelbart-spaces</identifier>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::Z, KeyCode::V, KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::DOT, KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::X, KeyCode::V, KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::SLASH, KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L</autogen>
+  </item>
+  
+  <item>
+      <name>Two key combos for modifier keys</name>
+      <appendix>SD/KL = CMD, AS/L; = CMD+SHIFT</appendix>
+      <appendix>WE/IO = OPT, QW/OP = OPT+SHIFT</appendix>
+      <appendix>XC/,. = CTRL, ZX/./ = CTRL+SHIFT</appendix>
+      <identifier>private.engelbart-modifiers</identifier>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::S, KeyCode::D, KeyCode::COMMAND_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::K, KeyCode::L, KeyCode::COMMAND_R</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::S, KeyCode::COMMAND_L, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::L, KeyCode::SEMICOLON, KeyCode::COMMAND_R, ModifierFlag::SHIFT_R</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::W, KeyCode::E, KeyCode::OPTION_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::I, KeyCode::O, KeyCode::OPTION_R</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::Q, KeyCode::W, KeyCode::OPTION_L, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::O, KeyCode::P, KeyCode::OPTION_R, ModifierFlag::SHIFT_R</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::X, KeyCode::C, KeyCode::CONTROL_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::COMMA, KeyCode::DOT, KeyCode::CONTROL_R</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::Z, KeyCode::X, KeyCode::CONTROL_L, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::DOT, KeyCode::SLASH, KeyCode::CONTROL_R, ModifierFlag::SHIFT_R</autogen>
+  </item>
+  
+  <item>
+    <name>Two key combos for brackets</name>
+    <identifier>private.engelbart-brackets</identifier>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::W, KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_R</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::SEMICOLON, KeyCode::O, KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::E, KeyCode::BRACKET_LEFT</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::SEMICOLON, KeyCode::I, KeyCode::BRACKET_RIGHT</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::E, KeyCode::G, KeyCode::KEY_9, ModifierFlag::SHIFT_R</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::H, KeyCode::I, KeyCode::KEY_0, ModifierFlag::SHIFT_L</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::R, KeyCode::G, KeyCode::COMMA, ModifierFlag::SHIFT_R</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::H, KeyCode::U, KeyCode::DOT, ModifierFlag::SHIFT_L</autogen>
+  </item>
+  
+  <item>
+    <name>Two key combos for symbols</name>
+    <identifier>private.engelbart-symbols</identifier>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::A, KeyCode::KEY_1, ModifierFlag::SHIFT_R</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::S, KeyCode::KEY_2, ModifierFlag::SHIFT_R</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::D, KeyCode::KEY_3, ModifierFlag::SHIFT_R</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::F, KeyCode::KEY_4, ModifierFlag::SHIFT_R</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::J, KeyCode::KEY_5, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::K, KeyCode::KEY_6, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::L, KeyCode::KEY_7, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::SPACE, KeyCode::SEMICOLON, KeyCode::KEY_8, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::SEMICOLON, KeyCode::QUOTE, KeyCode::MINUS, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::P, KeyCode::BRACKET_LEFT, KeyCode::QUOTE, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::N, KeyCode::K, KeyCode::SLASH, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::K, KeyCode::SEMICOLON, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::N, KeyCode::L, KeyCode::EQUAL, ModifierFlag::SHIFT_L</autogen>
+  </item>
+  
+  <item>
+    <name>Two key combos for emoticons</name>
+    <identifier>private.engelbart-emoticons</identifier>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::Z, KeyCode::S, KeyCode::VK_OPEN_URL_SMILEY_HAPPY</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::Z, KeyCode::D, KeyCode::VK_OPEN_URL_SMILEY_SAD</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::Z, KeyCode::F, KeyCode::VK_OPEN_URL_SMILEY_FROWN</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::Z, KeyCode::G, KeyCode::VK_OPEN_URL_SMILEY_EXCITE</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::SLASH, KeyCode::H, KeyCode::VK_OPEN_URL_SMILEY_AFRAID</autogen>
+      <autogen>__SimultaneousKeyPresses__ KeyCode::SLASH, KeyCode::J, KeyCode::VK_OPEN_URL_SMILEY_LOVE</autogen>
+  </item>
+
+  <item>
+    <name>Commands to Brackets</name>
+    <appendix>When pressed alone, Left Command types left bracket {</appendix>
+    <appendix>When pressed alone, Right Command types right bracket }</appendix>
+    <appendix>When used with other keys, they're normal Commands.</appendix>
+    <identifier>private.command-brackets</identifier>
+
+    <modifier_not>
+      ModifierFlag::SHIFT_L, ModifierFlag::SHIFT_R,
+      ModifierFlag::CONTROL_L, ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,  ModifierFlag::OPTION_R,
+    </modifier_not>
+
+    <!-- Pushing Commands together produces {} -->
+    <autogen>
+      __KeyToKey__
+      KeyCode::COMMAND_L, ModifierFlag::COMMAND_R,
+      KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L,
+      KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L,
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::COMMAND_R, ModifierFlag::COMMAND_L,
+      KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L,
+      KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <!-- This is the basic mapping. -->
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::COMMAND_R,
+      KeyCode::COMMAND_R,
+      KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L,
+    </autogen>
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::COMMAND_L,
+      KeyCode::COMMAND_L,
+      KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_R,
+    </autogen>
+  </item>
+
+  <item>
+    <name>Options to Brackets</name>
+    <appendix>When pressed alone, Left Option types left bracket [</appendix>
+    <appendix>When pressed alone, Right Option types right bracket ]</appendix>
+    <appendix>When used with other keys, they're normal Options.</appendix>
+    <identifier>private.command-brackets-2</identifier>
+
+    <modifier_not>
+      ModifierFlag::SHIFT_L, ModifierFlag::SHIFT_R,
+      ModifierFlag::CONTROL_L, ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::COMMAND_L,  ModifierFlag::COMMAND_R,
+    </modifier_not>
+
+    <!-- Pushing Commands together produces {} -->
+    <autogen>
+      __KeyToKey__
+      KeyCode::OPTION_L, ModifierFlag::OPTION_R,
+      KeyCode::BRACKET_RIGHT,
+      KeyCode::BRACKET_LEFT
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::OPTION_R, ModifierFlag::OPTION_L,
+      KeyCode::BRACKET_LEFT,
+      KeyCode::BRACKET_RIGHT
+    </autogen>
+
+    <!-- This is the basic mapping. -->
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::OPTION_R,
+      KeyCode::OPTION_R,
+      KeyCode::BRACKET_RIGHT
+    </autogen>
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::OPTION_L,
+      KeyCode::OPTION_L,
+      KeyCode::BRACKET_LEFT
+    </autogen>
+  </item>
+</root>
