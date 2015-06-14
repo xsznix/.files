@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_CUSTOM=".zsh_custom"
+ZSH_CUSTOM="/Users/xsznix/.zsh_custom"
 ZSH_THEME="xsznix"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -46,7 +46,7 @@ ZSH_THEME="xsznix"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(common-aliases extract git grep lol sublime web-search z zsh-syntax-highlighting)
+plugins=(brew common-aliases extract git grep lol ruby rvm sublime web-search z zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -98,13 +98,13 @@ ZSH_HIGHLIGHT_STYLES[default]=fg=yellow
 ZSH_HIGHLIGHT_PATTERNS+=('sudo' 'fg=red,bold,underline')
 ZSH_HIGHLIGHT_PATTERNS+=('rm' 'fg=red,bold,underline')
 
+# HISTORY
+
 # INIT STUFF
 
-bindkey -v # vim mode
-
 chpwd () {
-	print -P "%{$fg[black]%}« $(pwd)%{$reset_color%}"
+	print -P "%{$fg[black]%}%D{"%H:%M:%S"}%{$reset_color%} %{$fg[black]%}« $(pwd)%{$reset_color%}"
 }
 
 clear
-chpwd
+print -P "%{$fg[black]%}%D{"%H:%M:%S"}%{$reset_color%} %{$fg[black]%}« %n@%m :: $(pwd)%{$reset_color%}"

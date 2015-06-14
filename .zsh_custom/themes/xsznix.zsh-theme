@@ -1,11 +1,11 @@
 if [ $UID -eq 0 ]; then CARETCOLOR="red"; else CARETCOLOR="blue"; fi
 
-local return_code="%(?..%{$fg_bold[red]%}« %?%{$reset_color%}
+local return_code="%(?..%{$fg[black]%}%D{"%H:%M:%S"}%{$reset_color%} %{$fg_bold[red]%}« %?%{$reset_color%}
 )"
 
 local git='$(git_prompt_info)$(git_prompt_ahead)'
 
-PROMPT='${return_code}%{${fg_bold[$CARETCOLOR]}%}»%{$reset_color%} '
+PROMPT="${return_code}%{$fg[black]%}%D{"%H:%M:%S"}%{$reset_color%} %{${fg_bold[$CARETCOLOR]}%}»%{$reset_color%} "
 
 RPROMPT="%{$fg[yellow]%}$git%{$reset_color%} %{${fg[green]}%}%1~%{$reset_color%}"
 
