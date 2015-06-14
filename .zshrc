@@ -90,10 +90,13 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
-ZSH_HIGHLIGHT_STYLES[alias]=fg=blue,bold
 ZSH_HIGHLIGHT_STYLES[single-hyphen-option]=fg=magenta
 ZSH_HIGHLIGHT_STYLES[double-hyphen-option]=fg=magenta
 ZSH_HIGHLIGHT_STYLES[path]=fg=cyan
+ZSH_HIGHLIGHT_STYLES[default]=fg=yellow
+
+ZSH_HIGHLIGHT_PATTERNS+=('sudo' 'fg=red,bold,underline')
+ZSH_HIGHLIGHT_PATTERNS+=('rm' 'fg=red,bold,underline')
 
 # INIT STUFF
 
