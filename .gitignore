@@ -5,6 +5,8 @@
 !.zshrc
 !/.zsh_custom/
 !/.zsh_custom/*
+!/.zsh_custom/plugins/
+!/.zsh_custom/plugins/*
 !/.zsh_custom/themes/
 !/.zsh_custom/themes/*
 !.slate

@@ -46,7 +46,7 @@ ZSH_THEME="xsznix"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(common-aliases extract git grep lol web-search z)
+plugins=(common-aliases extract git grep lol sublime web-search z zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,3 +85,10 @@ export ANDROID_HOME=~/bin/adt-bundle-mac-x86_64/sdk
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$Home/Programming
 source /usr/local/bin/virtualenvwrapper.sh
+
+chpwd () {
+	print -P "%{$fg[cyan]%}« $(pwd)%{$reset_color%}"
+}
+
+clear
+chpwd
