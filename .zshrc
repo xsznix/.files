@@ -86,8 +86,21 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$Home/Programming
 source /usr/local/bin/virtualenvwrapper.sh
 
+# ZSH HIGHLIGHTING
+
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+
+ZSH_HIGHLIGHT_STYLES[alias]=fg=blue,bold
+ZSH_HIGHLIGHT_STYLES[single-hyphen-option]=fg=magenta
+ZSH_HIGHLIGHT_STYLES[double-hyphen-option]=fg=magenta
+ZSH_HIGHLIGHT_STYLES[path]=fg=cyan
+
+# INIT STUFF
+
+bindkey -v # vim mode
+
 chpwd () {
-	print -P "%{$fg[cyan]%}« $(pwd)%{$reset_color%}"
+	print -P "%{$fg[black]%}« $(pwd)%{$reset_color%}"
 }
 
 clear
