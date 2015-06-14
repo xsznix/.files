@@ -3,6 +3,12 @@
 !.gitignore
 !.vimrc
 !.zshrc
-!.oh-my-zsh/*
+!/.zsh_custom/
+!/.zsh_custom/*
+!/.zsh_custom/themes/
+!/.zsh_custom/themes/*
 !.slate
-!Library/Application\ Support/Karabiner/private.xml
+!/Library/
+!/Library/Application\ Support/
+!/Library/Application\ Support/Karabiner/
+!/Library/Application\ Support/Karabiner/private.xml
