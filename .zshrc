@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_CUSTOM="/Users/xsznix/.zsh_custom"
+ZSH_CUSTOM="$HOME/.zsh_custom"
 ZSH_THEME="xsznix"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -95,16 +95,14 @@ ZSH_HIGHLIGHT_STYLES[double-hyphen-option]=fg=magenta
 ZSH_HIGHLIGHT_STYLES[path]=fg=cyan
 ZSH_HIGHLIGHT_STYLES[default]=fg=yellow
 
-ZSH_HIGHLIGHT_PATTERNS+=('sudo' 'fg=red,bold,underline')
-ZSH_HIGHLIGHT_PATTERNS+=('rm' 'fg=red,bold,underline')
-
-# HISTORY
+#ZSH_HIGHLIGHT_PATTERNS+=('sudo' 'fg=red,bold,underline')
+#ZSH_HIGHLIGHT_PATTERNS+=('rm' 'fg=red,bold,underline')
 
 # INIT STUFF
 
 chpwd () {
-	print -P "%{$fg[black]%}%D{"%H:%M:%S"}%{$reset_color%} %{$fg[black]%}« $(pwd)%{$reset_color%}"
+	print -P "$(termtime) %{$fg[black]%}« $(pwd)%{$reset_color%}"
 }
 
 clear
-print -P "%{$fg[black]%}%D{"%H:%M:%S"}%{$reset_color%} %{$fg[black]%}« %n@%m :: $(pwd)%{$reset_color%}"
+print -P "$(termtime) %{$fg[black]%}« %n@%m :: $(pwd)%{$reset_color%}"
