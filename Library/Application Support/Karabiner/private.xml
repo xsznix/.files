@@ -168,6 +168,12 @@
   </item>
 
   <item>
+    <name>E+F to escape</name>
+    <identifier>private.engelbart-escape</identifier>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::E, KeyCode::F, KeyCode::ESCAPE</autogen>
+  </item>
+
+  <item>
     <name>Two key combos for navigation</name>
     <identifier>private.engelbart-arrow</identifier>
     <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::G, KeyCode::CURSOR_LEFT</autogen>
