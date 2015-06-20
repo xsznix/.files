@@ -98,11 +98,20 @@ ZSH_HIGHLIGHT_STYLES[default]=fg=yellow
 #ZSH_HIGHLIGHT_PATTERNS+=('sudo' 'fg=red,bold,underline')
 #ZSH_HIGHLIGHT_PATTERNS+=('rm' 'fg=red,bold,underline')
 
+# UNALIAS SOME STUFF THAT SHOULDN'T BE
+unalias rm
+unalias cp
+unalias mv
+
+alias rmi='rm -i'
+alias cpi='cp -i'
+alias mvi='mv -i'
+
 # INIT STUFF
 
 chpwd () {
-	print -P "$(termtime) %{$fg[black]%}« $(pwd)%{$reset_color%}"
+	print -P "%{$fg[black]%}« $(pwd)%{$reset_color%}"
 }
 
 clear
-print -P "$(termtime) %{$fg[black]%}« %n@%m :: $(pwd)%{$reset_color%}"
+print -P "%{$fg[black]%}« %n@%m :: $(pwd)%{$reset_color%}"
