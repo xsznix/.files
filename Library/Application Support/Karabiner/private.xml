@@ -97,6 +97,8 @@
     <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F11, ModifierFlag::COMMAND_L</autogen>
     <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F12, ModifierFlag::COMMAND_L</autogen>
 
+    <autogen>__KeyToKey__ KeyCode::BACKQUOTE, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F13, ModifierFlag::COMMAND_L</autogen>
+
     <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F1, ModifierFlag::CONTROL_L</autogen>
     <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F2, ModifierFlag::CONTROL_L</autogen>
     <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::FN | ModifierFlag::NONE, KeyCode::F3, ModifierFlag::CONTROL_L</autogen>
