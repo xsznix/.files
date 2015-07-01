@@ -3,6 +3,7 @@
 !.gitignore
 !.vimrc
 !.zshrc
+!.tmux.conf
 !/.zsh_custom/
 !/.zsh_custom/*
 !/.zsh_custom/plugins/
@@ -18,3 +19,4 @@
 !/Library/Application\ Support/Sublime\ Text\ 3/Packages
 !/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 !/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+!/.tomorrow-theme/

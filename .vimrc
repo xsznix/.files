@@ -19,3 +19,12 @@ set wrap
 set number
 " <Ctrl-l> redraws the screen and removes any search highlighting
 nnoremap <silent> <C-l> :nohl<CR><C-l>
+
+" theme
+source $HOME/.tomorrow-theme/vim/colors/Tomorrow-Night-Eighties.vim
+
+" mouse
+set mouse=a
+if has('mouse_sgr')
+	set ttymouse=sgr
+endif
