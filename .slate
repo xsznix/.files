@@ -69,6 +69,8 @@ alias pos-2br move screenOriginX+${halfX};screenOriginY+${halfY}     ${size-half
 alias pos-2fl move screenOriginX;screenOriginY                       ${size-half-tall}
 alias pos-2fr move screenOriginX+${halfX};screenOriginY              ${size-half-tall}
 
+alias pos-ful move screenOriginX;screenOriginY screenSizeX;screenSizeY
+
 bind f1:cmd;ctrl  ${pos-4tl}
 bind f2:cmd;ctrl  ${pos-4tp}
 bind f3:cmd;ctrl  ${pos-4ts}
@@ -97,6 +99,8 @@ bind f9:cmd       ${pos-3fr}
 bind f10:cmd      ${pos-3tw}
 bind f11:cmd      ${pos-3bw}
 bind f12:cmd      ${pos-3fw}
+
+bind f13:cmd      ${pos-ful}
 
 bind f1:ctrl      ${pos-2tl}
 bind f2:ctrl      ${pos-2tr}
