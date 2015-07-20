@@ -152,9 +152,9 @@
   </item>
 
   <item>
-    <name>FQ to delete world</name>
+    <name>FW to delete word</name>
     <identifier>private.delete-word</identifier>
-    <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::Q, KeyCode::DELETE, ModifierFlag::OPTION_L</autogen>
+    <autogen>__SimultaneousKeyPresses__ KeyCode::F, KeyCode::W, KeyCode::DELETE, ModifierFlag::OPTION_L</autogen>
   </item>
 
   <item>
@@ -182,8 +182,6 @@
     <autogen>__SimultaneousKeyPresses__ KeyCode::H, KeyCode::J, KeyCode::CURSOR_RIGHT</autogen>
     <autogen>__SimultaneousKeyPresses__ KeyCode::D, KeyCode::G, KeyCode::CURSOR_UP</autogen>
     <autogen>__SimultaneousKeyPresses__ KeyCode::H, KeyCode::K, KeyCode::CURSOR_DOWN</autogen>
-    <autogen>__SimultaneousKeyPresses__ KeyCode::A, KeyCode::F, KeyCode::HOME</autogen>
-    <autogen>__SimultaneousKeyPresses__ KeyCode::J, KeyCode::SEMICOLON, KeyCode::END</autogen>
     <autogen>__SimultaneousKeyPresses__ KeyCode::C, KeyCode::V, KeyCode::PAGEUP</auttogen>
     <autogen>__SimultaneousKeyPresses__ KeyCode::M, KeyCode::COMMA, KeyCode::PAGEDOWN</autogen>
   </item>
