@@ -79,7 +79,8 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ut15="cd ~/Google\ Drive/UT\ Austin/2015"
+alias ut="cd ~/Google\ Drive/UT\ Austin"
+alias ut16f="cd ~/Google\ Drive/UT\ Austin/2016F"
 
 export ANDROID_HOME=~/bin/adt-bundle-mac-x86_64/sdk
 export WORKON_HOME=$HOME/.virtualenvs
@@ -115,3 +116,6 @@ chpwd () {
 
 clear
 print -P "%{$fg[black]%}« %n@%m :: $(pwd)%{$reset_color%}"
+
+PERL_MB_OPT="--install_base \"/Users/xsznix/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/xsznix/perl5"; export PERL_MM_OPT;
