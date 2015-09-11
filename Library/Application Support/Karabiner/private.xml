@@ -11,6 +11,16 @@
     <productid>0xfa58</productid>
   </deviceproductref>
 
+  <devicevendordef>
+    <vendorname>Razer</vendorname>
+    <vendorid>0x1532</vendorid>
+  </devicevendordef>
+
+  <deviceproductdef>
+    <productname>Naga</productname>
+    <productid>0x0015</productid>
+  </deviceproductref>
+
   <!-- emoticons -->
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_SMILEY_HAPPY</name>
@@ -63,8 +73,7 @@
     <identifier>private.venus-buttons</identifier>
     <block>
       <device_only>
-        DeviceVendor::UtechSmart,
-        DeviceProduct::Venus
+        DeviceVendor::UtechSmart, DeviceProduct::Venus
       </device_only>
       <autogen>--KeyToKey-- KeyCode::KEY_1, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen>
       <autogen>--KeyToKey-- KeyCode::KEY_2, KeyCode::CURSOR_DOWN, ModifierFlag::CONTROL_L</autogen>
@@ -78,6 +87,23 @@
       <autogen>--KeyToKey-- KeyCode::KEY_0, KeyCode::COMMA, ModifierFlag::COMMAND_L</autogen>
       <autogen>--KeyToKey-- KeyCode::KEYPAD_PLUS, KeyCode::F11, ModifierFlag::OPTION_L</autogen>
       <autogen>--KeyToKey-- KeyCode::KEYPAD_MINUS, KeyCode::F12, ModifierFlag::OPTION_L</autogen>
+    </block>
+    <block>
+      <device_only>
+        DeviceVendor::Razer, DeviceProduct::Naga
+      </device_only>
+      <autogen>--KeyToKey-- KeyCode::KEYPAD_1, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEYPAD_2, KeyCode::CURSOR_DOWN, ModifierFlag::CONTROL_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEYPAD_3, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEYPAD_4, KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L | ModifierFlag::CONTROL_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEYPAD_5, KeyCode::CURSOR_UP, ModifierFlag::CONTROL_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEYPAD_6, KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L | ModifierFlag::CONTROL_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEYPAD_7, KeyCode::TAB, ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEYPAD_8, KeyCode::W, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEYPAD_9, KeyCode::TAB, ModifierFlag::CONTROL_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEYPAD_0, KeyCode::COMMA, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEYPAD_MINUS, KeyCode::F11, ModifierFlag::OPTION_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEYPAD_PLUS, KeyCode::F12, ModifierFlag::OPTION_L</autogen>
     </block>
   </item>
 
@@ -149,36 +175,36 @@
     <name>ROAID demo</name>
     <identifier>private.roaid-demo</identifier>
     <!-- <autogen>--KeyToKey-- KeyCode::Q, KeyCode::Q</autogen> -->
-    <autogen>--KeyToKey-- KeyCode::W, KeyCode::B</autogen>
+    <autogen>--KeyToKey-- KeyCode::W, KeyCode::Y</autogen>
     <autogen>--KeyToKey-- KeyCode::E, KeyCode::U</autogen>
-    <autogen>--KeyToKey-- KeyCode::R, KeyCode::F</autogen>
-    <autogen>--KeyToKey-- KeyCode::T, KeyCode::QUOTE</autogen>
-    <autogen>--KeyToKey-- KeyCode::Y, KeyCode::DOT</autogen>
-    <autogen>--KeyToKey-- KeyCode::U, KeyCode::L</autogen>
-    <autogen>--KeyToKey-- KeyCode::I, KeyCode::G</autogen>
-    <autogen>--KeyToKey-- KeyCode::O, KeyCode::W</autogen>
-    <autogen>--KeyToKey-- KeyCode::P, KeyCode::X</autogen>
+    <autogen>--KeyToKey-- KeyCode::R, KeyCode::M</autogen>
+    <autogen>--KeyToKey-- KeyCode::T, KeyCode::MINUS</autogen>
+    <autogen>--KeyToKey-- KeyCode::Y, KeyCode::COMMA</autogen>
+    <autogen>--KeyToKey-- KeyCode::U, KeyCode::F</autogen>
+    <autogen>--KeyToKey-- KeyCode::I, KeyCode::C</autogen>
+    <autogen>--KeyToKey-- KeyCode::O, KeyCode::G</autogen>
+    <autogen>--KeyToKey-- KeyCode::P, KeyCode::Z</autogen>
     <autogen>--KeyToKey-- KeyCode::A, KeyCode::R</autogen>
-    <autogen>--KeyToKey-- KeyCode::S, KeyCode::O</autogen>
+    <autogen>--KeyToKey-- KeyCode::S, KeyCode::I</autogen>
     <autogen>--KeyToKey-- KeyCode::D, KeyCode::A</autogen>
-    <autogen>--KeyToKey-- KeyCode::F, KeyCode::I</autogen>
-    <autogen>--KeyToKey-- KeyCode::G, KeyCode::D</autogen>
-    <autogen>--KeyToKey-- KeyCode::H, KeyCode::COMMA</autogen>
+    <autogen>--KeyToKey-- KeyCode::F, KeyCode::N</autogen>
+    <autogen>--KeyToKey-- KeyCode::G, KeyCode::L</autogen>
+    <autogen>--KeyToKey-- KeyCode::H, KeyCode::D</autogen>
     <autogen>--KeyToKey-- KeyCode::J, KeyCode::H</autogen>
     <autogen>--KeyToKey-- KeyCode::K, KeyCode::T</autogen>
-    <autogen>--KeyToKey-- KeyCode::L, KeyCode::N</autogen>
-    <autogen>--KeyToKey-- KeyCode::SEMICOLON, KeyCode::S</autogen>
-    <autogen>--KeyToKey-- KeyCode::QUOTE, KeyCode::MINUS</autogen>
+    <autogen>--KeyToKey-- KeyCode::L, KeyCode::S</autogen>
+    <autogen>--KeyToKey-- KeyCode::SEMICOLON, KeyCode::O</autogen>
+    <autogen>--KeyToKey-- KeyCode::QUOTE, KeyCode::SEMICOLON</autogen>
     <autogen>--KeyToKey-- KeyCode::Z, KeyCode::J</autogen>
     <autogen>--KeyToKey-- KeyCode::X, KeyCode::K</autogen>
     <autogen>--KeyToKey-- KeyCode::C, KeyCode::V</autogen>
-    <autogen>--KeyToKey-- KeyCode::V, KeyCode::Y</autogen>
+    <autogen>--KeyToKey-- KeyCode::V, KeyCode::W</autogen>
     <autogen>--KeyToKey-- KeyCode::B, KeyCode::SLASH</autogen>
-    <autogen>--KeyToKey-- KeyCode::N, KeyCode::SEMICOLON</autogen>
-    <!-- <autogen>--KeyToKey-- KeyCode::M, KeyCode::M</autogen> -->
+    <autogen>--KeyToKey-- KeyCode::N, KeyCode::X</autogen>
+    <autogen>--KeyToKey-- KeyCode::M, KeyCode::DOT</autogen>
     <autogen>--KeyToKey-- KeyCode::COMMA, KeyCode::P</autogen>
-    <autogen>--KeyToKey-- KeyCode::DOT, KeyCode::C</autogen>
-    <autogen>--KeyToKey-- KeyCode::SLASH, KeyCode::Z</autogen>
+    <autogen>--KeyToKey-- KeyCode::DOT, KeyCode::B</autogen>
+    <autogen>--KeyToKey-- KeyCode::SLASH, KeyCode::QUOTE</autogen>
     <autogen>--KeyToKey-- KeyCode::COMMAND_L, KeyCode::E</autogen>
   </item>
 
