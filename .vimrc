@@ -16,6 +16,9 @@ set smartindent
 set smarttab
 set wrap
 
+" column 80 marker
+set colorcolumn=80
+
 set number
 " <Ctrl-l> redraws the screen and removes any search highlighting
 nnoremap <silent> <C-l> :nohl<CR><C-l>
