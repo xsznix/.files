@@ -21,6 +21,16 @@
     <productid>0x0015</productid>
   </deviceproductref>
 
+  <devicevendordef>
+  	<vendorname>Logitech</vendorname>
+  	<vendorid>0x046d</vendorid>
+  </devicevendordef>
+
+  <deviceproductdef>
+  	<productname>G600</productname>
+  	<productid>0xc24a</productid>
+  </deviceproductdef>
+
   <!-- emoticons -->
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_SMILEY_HAPPY</name>
@@ -104,6 +114,38 @@
       <autogen>--KeyToKey-- KeyCode::KEYPAD_0, KeyCode::COMMA, ModifierFlag::COMMAND_L</autogen>
       <autogen>--KeyToKey-- KeyCode::KEYPAD_MINUS, KeyCode::F11, ModifierFlag::OPTION_L</autogen>
       <autogen>--KeyToKey-- KeyCode::KEYPAD_PLUS, KeyCode::F12, ModifierFlag::OPTION_L</autogen>
+    </block>
+    <block>
+      <device_only>
+        DeviceVendor::Logitech, DeviceProduct::G600
+      </device_only>
+      <autogen>--KeyToKey-- KeyCode::KEY_1, ModifierFlag::NONE, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_2, ModifierFlag::NONE, KeyCode::CURSOR_DOWN, ModifierFlag::CONTROL_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_3, ModifierFlag::NONE, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_4, ModifierFlag::NONE, KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L | ModifierFlag::CONTROL_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_5, ModifierFlag::NONE, KeyCode::CURSOR_UP, ModifierFlag::CONTROL_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_6, ModifierFlag::NONE, KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L | ModifierFlag::CONTROL_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_7, ModifierFlag::NONE, KeyCode::TAB, ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_8, ModifierFlag::NONE, KeyCode::W, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_9, ModifierFlag::NONE, KeyCode::TAB, ModifierFlag::CONTROL_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_0, ModifierFlag::NONE, KeyCode::COMMA, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::MINUS, ModifierFlag::NONE, KeyCode::F11, ModifierFlag::OPTION_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::EQUAL, ModifierFlag::NONE, KeyCode::F12, ModifierFlag::OPTION_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::CURSOR_UP, ModifierFlag::NONE, KeyCode::EQUAL, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::CURSOR_DOWN, ModifierFlag::NONE, KeyCode::MINUS, ModifierFlag::COMMAND_L</autogen>
+
+      <autogen>--KeyToKey-- KeyCode::KEY_1, ModifierFlag::SHIFT_L, KeyCode::N, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_2, ModifierFlag::SHIFT_L, KeyCode::O, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_3, ModifierFlag::SHIFT_L, KeyCode::S, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_4, ModifierFlag::SHIFT_L, KeyCode::X, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_5, ModifierFlag::SHIFT_L, KeyCode::C, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_6, ModifierFlag::SHIFT_L, KeyCode::V, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_7, ModifierFlag::SHIFT_L, KeyCode::Z, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_8, ModifierFlag::SHIFT_L, KeyCode::T, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_9, ModifierFlag::SHIFT_L, KeyCode::Z, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_0, ModifierFlag::SHIFT_L, KeyCode::Q, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::MINUS, ModifierFlag::SHIFT_L, KeyCode::R, ModifierFlag::COMMAND_L</autogen>
+      <autogen>--KeyToKey-- KeyCode::EQUAL, ModifierFlag::SHIFT_L, KeyCode::F12, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L</autogen>
     </block>
   </item>
 
