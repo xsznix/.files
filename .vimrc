@@ -8,12 +8,14 @@ set nobackup
 set nowb
 set noswapfile
 set cursorline
+set cc=80
 
 " auto indent
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set smartindent
 set smarttab
+set expandtab
 set wrap
 
 " column 80 marker
