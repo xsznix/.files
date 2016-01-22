@@ -22,13 +22,23 @@
   </deviceproductref>
 
   <devicevendordef>
-  	<vendorname>Logitech</vendorname>
-  	<vendorid>0x046d</vendorid>
+    <vendorname>Logitech</vendorname>
+    <vendorid>0x046d</vendorid>
   </devicevendordef>
 
   <deviceproductdef>
-  	<productname>G600</productname>
-  	<productid>0xc24a</productid>
+    <productname>G600</productname>
+    <productid>0xc24a</productid>
+  </deviceproductdef>
+
+  <devicevendordef>
+    <vendorname>EZ</vendorname>
+    <vendorid>0xFEED</vendorid>
+  </devicevendordef>
+
+  <deviceproductdef>
+    <productname>EZ</productname>
+    <productid>0x1307</productid>
   </deviceproductdef>
 
   <!-- emoticons -->
@@ -68,6 +78,8 @@
       <![CDATA[    echo "tell application \"System Events\" to keystroke \"<3\"" | osascript    ]]>
     </url>
   </vkopenurldef>
+
+  <symbol_map type="KeyCode" name="WHAT" value="0x42" />
 
   <item>
     <name>Send Shift-Ctrl-F13 for Right Option</name>
@@ -211,6 +223,7 @@
     <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F11, ModifierFlag::CONTROL_L</autogen>
     <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::FN | ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::F12, ModifierFlag::CONTROL_L</autogen>
     <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::FN | ModifierFlag::CONTROL_R | ModifierFlag::NONE, KeyCode::F12, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::SLASH, ModifierFlag::FN, KeyCode::WHAT</autogen>
   </item>
 
   <item>
@@ -455,5 +468,42 @@
       KeyCode::OPTION_L,
       KeyCode::BRACKET_LEFT
     </autogen>
+  </item>
+
+  <item>
+    <name>Aeon layout</name>
+    <identifier>private.layout.aeon</identifier>
+
+    <autogen>--KeyToKey-- KeyCode::Q, KeyCode::COMMA</autogen>
+    <autogen>--KeyToKey-- KeyCode::W, KeyCode::I</autogen>
+    <autogen>--KeyToKey-- KeyCode::E, KeyCode::U</autogen>
+    <autogen>--KeyToKey-- KeyCode::R, KeyCode::L</autogen>
+    <autogen>--KeyToKey-- KeyCode::T, KeyCode::X</autogen>
+    <autogen>--KeyToKey-- KeyCode::Y, KeyCode::SLASH</autogen>
+    <autogen>--KeyToKey-- KeyCode::U, KeyCode::F</autogen>
+    <autogen>--KeyToKey-- KeyCode::I, KeyCode::W</autogen>
+    <autogen>--KeyToKey-- KeyCode::O, KeyCode::G</autogen>
+    <autogen>--KeyToKey-- KeyCode::P, KeyCode::J</autogen>
+    <!-- <autogen>--KeyToKey-- KeyCode::A, KeyCode::A</autogen> -->
+    <autogen>--KeyToKey-- KeyCode::S, KeyCode::O</autogen>
+    <autogen>--KeyToKey-- KeyCode::D, KeyCode::E</autogen>
+    <autogen>--KeyToKey-- KeyCode::F, KeyCode::N</autogen>
+    <autogen>--KeyToKey-- KeyCode::G, KeyCode::M</autogen>
+    <autogen>--KeyToKey-- KeyCode::H, KeyCode::D</autogen>
+    <autogen>--KeyToKey-- KeyCode::J, KeyCode::H</autogen>
+    <autogen>--KeyToKey-- KeyCode::K, KeyCode::T</autogen>
+    <autogen>--KeyToKey-- KeyCode::L, KeyCode::S</autogen>
+    <autogen>--KeyToKey-- KeyCode::SEMICOLON, KeyCode::R</autogen>
+    <!-- <autogen>--KeyToKey-- KeyCode::QUOTE, KeyCode::QUOTE</autogen> -->
+    <autogen>--KeyToKey-- KeyCode::Z, KeyCode::SEMICOLON</autogen>
+    <autogen>--KeyToKey-- KeyCode::X, KeyCode::DOT</autogen>
+    <autogen>--KeyToKey-- KeyCode::C, KeyCode::Y</autogen>
+    <autogen>--KeyToKey-- KeyCode::V, KeyCode::V</autogen>
+    <autogen>--KeyToKey-- KeyCode::B, KeyCode::Z</autogen>
+    <autogen>--KeyToKey-- KeyCode::N, KeyCode::K</autogen>
+    <autogen>--KeyToKey-- KeyCode::M, KeyCode::P</autogen>
+    <autogen>--KeyToKey-- KeyCode::COMMA, KeyCode::B</autogen>
+    <autogen>--KeyToKey-- KeyCode::DOT, KeyCode::C</autogen>
+    <autogen>--KeyToKey-- KeyCode::SLASH, KeyCode::Q</autogen>
   </item>
 </root>
