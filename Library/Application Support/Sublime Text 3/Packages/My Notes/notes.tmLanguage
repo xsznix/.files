@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>notes</string>
+	</array>
+	<key>name</key>
+	<string>Notes</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Not highlighted</string>
+			<key>match</key>
+			<string>&gt;.*$</string>
+			<key>name</key>
+			<string>entity</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Bullet point enumeration</string>
+			<key>match</key>
+			<string>[ckflaprbsvxCKFLAPRBSVX\.\\\~-]{1,3}\t</string>
+			<key>name</key>
+			<string>keyword.control</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Change over time</string>
+			<key>match</key>
+			<string>\bCOT\b</string>
+			<key>name</key>
+			<string>keyword.control</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Years and year ranges</string>
+			<key>match</key>
+			<string>\b(late |early |mid-)?\-?\d{4}\-?[\d]*s?\b</string>
+			<key>name</key>
+			<string>constant.notes.year</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Centuries</string>
+			<key>match</key>
+			<string>\b(late |early |mid-)?\d{2}ct\b</string>
+			<key>name</key>
+			<string>constant.notes.century</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Month names</string>
+			<key>match</key>
+			<string>\b(late |early |mid-)?((Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)-?){1,2}\b</string>
+			<key>name</key>
+			<string>constant.notes.month</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Header</string>
+			<key>match</key>
+			<string>\#+\s+.*$</string>
+			<key>name</key>
+			<string>entity.name.function.notes</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Miscellaneous numbers</string>
+			<key>match</key>
+			<string>\d[\d\.]*[/kmb]?</string>
+			<key>name</key>
+			<string>constant.numeric</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Increase/Descrease, Number of, Size of, Et cetera</string>
+			<key>match</key>
+			<string>\b(inc|dec|num|sizeof|etc)\b</string>
+			<key>name</key>
+			<string>keyword.control</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Arrows pointing left and right</string>
+			<key>match</key>
+			<string>(&lt;-&gt;|&lt;-|-&gt;)</string>
+			<key>name</key>
+			<string>keyword.control</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Proper nouns</string>
+			<key>match</key>
+			<string>\b[A-Z][A-Za-z]*\b</string>
+			<key>name</key>
+			<string>entity.notes.propernoun</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\[</string>
+			<key>comment</key>
+			<string>Key terms</string>
+			<key>end</key>
+			<string>\]</string>
+			<key>name</key>
+			<string>entity.notes.keyterm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Comment</string>
+			<key>match</key>
+			<string>//.*$</string>
+			<key>name</key>
+			<string>comment.line.double-slash</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\(</string>
+			<key>end</key>
+			<string>\)</string>
+			<key>name</key>
+			<string>comment.block</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>!\{</string>
+			<key>comment</key>
+			<string>Important points</string>
+			<key>end</key>
+			<string>\}</string>
+			<key>name</key>
+			<string>entity.notes.important</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.history_notes</string>
+	<key>uuid</key>
+	<string>fe715bb4-0ffa-4740-8d17-31c366d1d507</string>
+</dict>
+</plist>
