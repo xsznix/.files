@@ -12,11 +12,11 @@
 	<array>
 		<dict>
 			<key>comment</key>
-			<string>Not highlighted</string>
+			<string>Quote</string>
 			<key>match</key>
-			<string>&gt;.*$</string>
+			<string>^&gt;.*$</string>
 			<key>name</key>
-			<string>entity</string>
+			<string>meta.diff.range</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -66,6 +66,26 @@
 			<key>name</key>
 			<string>variable</string>
 		</dict>-->
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>comment</key>
+			<string>Double quote</string>
+			<key>end</key>
+			<string>"</string>
+			<key>name</key>
+			<string>entity</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>```</string>
+			<key>comment</key>
+			<string>Code</string>
+			<key>end</key>
+			<string>```</string>
+			<key>name</key>
+			<string>string</string>
+		</dict>
 		<dict>
 			<key>begin</key>
 			<string>\[</string>
