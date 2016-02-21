@@ -80,7 +80,7 @@ export PATH=$HOME/bin:$HOME/bin/bin:/usr/local/bin:$PATH
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ut="cd ~/Google\ Drive/UT\ Austin"
-alias ut16f="cd ~/Google\ Drive/UT\ Austin/2016F"
+alias ut16s="cd ~/Google\ Drive/UT\ Austin/2016S"
 
 export ANDROID_HOME=~/bin/adt-bundle-mac-x86_64/sdk
 export WORKON_HOME=$HOME/.virtualenvs
