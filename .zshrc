@@ -120,4 +120,5 @@ print -P "%{$fg[black]%}« %n@%m :: $(pwd)%{$reset_color%}"
 PERL_MB_OPT="--install_base \"/Users/xsznix/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/xsznix/perl5"; export PERL_MM_OPT;
 
-export PATH=/lusr/opt/pintos:/lusr/opt/bochs-2.2.6-pintos/bin:/lusr/opt/qemu-1.1.1:$PATH
+#export PATH=/lusr/opt/pintos:/lusr/opt/bochs-2.2.6-pintos/bin:/lusr/opt/qemu-1.1.1:$PATH
+export PATH=/usr/local/heroku/bin:$PATH
